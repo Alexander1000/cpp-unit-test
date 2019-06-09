@@ -24,7 +24,7 @@ set(PUBLIC_HEADERS
 # Static library
 #--------------
 
-project(cpp-unit-test VERSION 0.0.1 DESCRIPTION "cpp-unit-test")
+project(cpp-unit-test VERSION 0.1.0 DESCRIPTION "cpp-unit-test")
 
 add_library(${PROJECT_NAME} STATIC ${CPP_UNIT_TEST_SOURCES})
 

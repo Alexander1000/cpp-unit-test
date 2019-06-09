@@ -37,6 +37,22 @@ namespace CppUnitTest
         }
     }
 
+    void assertEquals(TestCase *testCase, std::string* expected, char* actual)
+    {
+        testCase->increment();
+        if (expected->compare(actual)) {
+            throw new AssertEqualsException;
+        }
+    }
+
+    void assertEquals(TestCase *testCase, const char expected, char actual)
+    {
+        testCase->increment();
+        if (expected != actual) {
+            throw new AssertEqualsException;
+        }
+    }
+
     void assertTrue(TestCase *testCase, bool actual)
     {
         testCase->increment();
@@ -50,6 +66,14 @@ namespace CppUnitTest
         testCase->increment();
         if (actual) {
             throw new AssertFalseException;
+        }
+    }
+
+    void assertNotNull(TestCase* t, char* symbol)
+    {
+        t->increment();
+        if (symbol == NULL) {
+            throw new AssertNotNullException;
         }
     }
 } // CppUnitTest

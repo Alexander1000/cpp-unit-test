@@ -14,6 +14,9 @@ namespace CppUnitTest
 
     class AssertNotNullException
     {};
+
+    class AssertNullException
+    {};
 }
 
 #endif // CPP_UNIT_TEST_EXCEPTIONS_H

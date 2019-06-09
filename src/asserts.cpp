@@ -76,4 +76,12 @@ namespace CppUnitTest
             throw new AssertNotNullException;
         }
     }
+
+    void assertNull(TestCase* t, char* symbol)
+    {
+        t->increment();
+        if (symbol != NULL) {
+            throw new AssertNullException;
+        }
+    }
 } // CppUnitTest

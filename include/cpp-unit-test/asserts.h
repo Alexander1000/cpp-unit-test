@@ -22,6 +22,8 @@ namespace CppUnitTest
     void assertFalse(TestCase *testCase, bool actual);
 
     void assertNotNull(TestCase*, char*);
+
+    void assertNull(TestCase*, char*);
 }
 
 #endif // CPP_UNIT_TEST_ASSERTS_H

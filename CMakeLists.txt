@@ -3,9 +3,10 @@ cmake_minimum_required(VERSION 3.7)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-set(IO_BUFFER_SOURCES
+set(CPP_UNIT_TEST_SOURCES
     src/test-case.cpp
     src/test-suite.cpp
+    src/asserts.cpp
 )
 
 if(NOT DEFINED CMAKE_INSTALL_INCLUDEDIR)
@@ -25,7 +26,7 @@ set(PUBLIC_HEADERS
 
 project(cpp-unit-test VERSION 0.0.1 DESCRIPTION "cpp-unit-test")
 
-add_library(${PROJECT_NAME} STATIC ${IO_BUFFER_SOURCES})
+add_library(${PROJECT_NAME} STATIC ${CPP_UNIT_TEST_SOURCES})
 
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 set_target_properties(${PROJECT_NAME} PROPERTIES SOVERSION 1)

@@ -21,4 +21,4 @@ namespace CppUnitTest
     };
 }
 
-#endif /* CPP_UNIT_TEST_SUITE_H */
+#endif // CPP_UNIT_TEST_SUITE_H

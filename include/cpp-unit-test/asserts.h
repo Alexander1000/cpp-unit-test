@@ -2,6 +2,7 @@
 #define CPP_UNIT_TEST_ASSERTS_H
 
 #include <string>
+#include <cpp-unit-test/test-case.h>
 
 namespace CppUnitTest
 {

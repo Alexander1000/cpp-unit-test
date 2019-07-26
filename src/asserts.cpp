@@ -84,4 +84,20 @@ namespace CppUnitTest
             throw new AssertNullException;
         }
     }
+
+    void assertNotNull(TestCase* t, void* data)
+    {
+        t->increment();
+        if (data == nullptr) {
+            throw new AssertNotNullException;
+        }
+    }
+
+    void assertNull(TestCase* t, void* data)
+    {
+        t->increment();
+        if (data != nullptr) {
+            throw new AssertNullException;
+        }
+    }
 } // CppUnitTest
